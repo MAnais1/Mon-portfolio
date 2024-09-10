@@ -1,0 +1,261 @@
+/* Variables*/
+body {
+  margin: 0px;
+  padding: 0px;
+  background: rgb(195, 42, 34);
+  background: linear-gradient(219deg, rgba(195, 42, 34, 0.0340511204) 0%, rgba(182, 77, 77, 0.0676645658) 30%, rgba(191, 122, 122, 0.5326505602) 49%, rgba(128, 132, 178, 0.3855917367) 61%, rgb(102, 124, 202) 76%, rgb(45, 107, 253) 100%);
+}
+
+h1,
+h2,
+li,
+p,
+button,
+input,
+label,
+a {
+  font-family: "Poiret One", sans-serif;
+}
+
+header {
+  background-color: rgb(95, 38, 38);
+  position: fixed;
+  height: 60px;
+  width: 100%;
+}
+header .header-box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: auto;
+  height: 100%;
+}
+header .logo {
+  height: 100%;
+  margin-left: 20px;
+}
+header .logo .logo-img {
+  height: 100%;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+header nav ul {
+  display: flex;
+  gap: 50px;
+}
+header nav ul a {
+  text-decoration: none;
+  color: white;
+}
+header nav ul a li {
+  list-style-type: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+main {
+  max-width: 1500px;
+  margin: auto;
+  padding-top: 60px;
+}
+main p {
+  font-weight: 600;
+}
+main .accueil,
+main .presentation,
+main .projets,
+main .contact {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+main .accueil {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+main .accueil .banniere {
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main .accueil .banniere .accueil-texte {
+  width: 50%;
+}
+main .accueil .banniere .accueil-texte h1 {
+  font-size: 60px;
+  font-weight: 900;
+  color: rgb(32, 81, 105);
+  margin: 20px;
+}
+main .accueil .banniere img {
+  width: 30%;
+}
+main .presentation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+main .presentation img {
+  width: 40%;
+}
+main .presentation .presentation-texte {
+  width: 50%;
+}
+main .projets {
+  background-color: rgba(232, 232, 232, 0.452);
+  border-radius: 40px;
+  padding: 50px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.22);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+main .projets h2 {
+  background-color: white;
+  border: solid 3px rgba(0, 0, 0, 0.837);
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.22);
+  margin: 0.1% 30% 3% 30%;
+  padding: 10px;
+  text-align: center;
+  color: rgb(95, 38, 38);
+  font-weight: 800;
+}
+main .projets .projet-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+main .projets .projet-card {
+  width: 22%;
+  background-color: white;
+  border: black solid 1px;
+  margin: auto;
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.22);
+}
+main .projets .projet-card img {
+  width: 90%;
+  height: 70%;
+  margin: auto;
+  padding-top: 5%;
+}
+main .projets .projet-card .card-texte {
+  text-align: start;
+  margin-left: 5%;
+}
+main .projets .projet-card .card-texte h3 {
+  margin-bottom: 0px;
+}
+main .projets .projet-card .card-texte p {
+  margin-top: 0px;
+}
+main .contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 700px;
+  margin: auto;
+  padding-top: 40px;
+}
+main .contact h2 {
+  font-size: 30px;
+  font-weight: 900;
+  text-shadow: #fc0 1px 0 5px;
+}
+main .contact .contact-form {
+  height: 85%;
+  width: 45%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.312);
+  border-radius: 90px;
+  text-align: center;
+  box-shadow: 10px 5px 5px rgba(249, 140, 140, 0.08);
+}
+main .contact form {
+  height: 80%;
+  width: 95%;
+  margin: auto;
+}
+main .contact form button {
+  background: rgb(0, 24, 255);
+  background: radial-gradient(circle, rgb(0, 24, 255) 0%, rgba(92, 26, 151, 0.3267682073) 47%, rgba(192, 34, 195, 0.7021183473) 100%);
+  opacity: 0.95;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  border: 3px solid rgba(241, 241, 241, 0.423);
+  margin: 25px;
+  width: 50%;
+  height: 12%;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.242);
+}
+main .contact form button:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+main .contact .form-box {
+  display: flex;
+  background-color: rgba(249, 249, 249, 0.091);
+  height: 85%;
+  border-radius: 90px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.08);
+}
+main .contact .form-box .box {
+  border-radius: 90px;
+  width: 44%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  background-color: rgba(232, 159, 204, 0.375);
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.08);
+}
+main .contact .form-box .box-left input {
+  height: 15%;
+  border: solid 1px rgb(255, 255, 255);
+}
+main .contact .form-box .box-right textarea {
+  height: 50%;
+}
+main .contact .form-box label {
+  font-weight: 700;
+  font-size: 20px;
+  text-shadow: rgb(0, 0, 0) 1px 0 5px;
+}
+main .contact .form-box input,
+main .contact .form-box textarea {
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 1px 10px 1px rgba(57, 19, 133, 0.322);
+  padding: 10px;
+  font-weight: 600;
+}
+main .contact img {
+  width: 50%;
+  max-height: 100%;
+}
+
+footer {
+  background-color: rgb(3, 1, 31);
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 50px;
+  color: white;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
