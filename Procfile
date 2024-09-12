@@ -1,1 +1,2 @@
-web: node server.js
+web: npx json-server --watch data.json --port $PORT
+
