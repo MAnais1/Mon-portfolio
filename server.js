@@ -3,10 +3,10 @@ const server = jsonServer.create();
 const router = jsonServer.router('data.json'); // Chemin vers fichier data.json
 const middlewares = jsonServer.defaults();
 
-const port = process.env.PORT || 3000;
 server.use(middlewares);
 server.use(router);
 
-server.listen(port, () => {
-  console.log('JSON Server is running');
+const PORT = process.env.PORT || 5000;
+server.listen(PORT, () => {
+  console.log(`JSON Server is running on port ${PORT}`);
 });
