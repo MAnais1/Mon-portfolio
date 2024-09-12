@@ -200,7 +200,7 @@ main .contact {
 main .contact h2 {
   font-size: 30px;
   font-weight: 900;
-  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  text-shadow: 1px 1px 2px rgb(117, 10, 40), 0 0 1em rgba(246, 246, 246, 0.605), 0 0 0.2em blue;
 }
 main .contact .contact-form {
   height: 85%;
