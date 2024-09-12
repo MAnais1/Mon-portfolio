@@ -1,15 +1,17 @@
-const xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = Projets;
-xhttp.open("GET", "data.json");
+ async function GetData() {
+  const response= await fetch("http://localhost:3000/projets");
+  return await response.json();
+ }
 
-
-xhttp.send();
- /* declenche la demande de la ressource*/
- function Projets() {
   
-  if (this.readyState == 4 && this.status == 200) {
+ /* declenche la demande de la ressource*/
+  async function Projets() {
+   const data= await GetData();
+   console.log(data);
+  
+
     const tprojet = document.getElementById("tprojet");
-     const data = JSON.parse(this.response);
+     
     console.log(data);
     const body = document.querySelector("body");
 
@@ -149,5 +151,5 @@ xhttp.send();
       });
     });
   }
-}
+
 Projets();
