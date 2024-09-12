@@ -1,5 +1,5 @@
 async function GetData() {
-  const response = await fetch("http://localhost:3000/projets");
+  const response = await fetch("https://portfolio-anais-marmuse-64cccb154aa9.herokuapp.com/");
   return await response.json();
 }
 
