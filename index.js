@@ -2,13 +2,14 @@ const xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = Projets;
 xhttp.open("GET", "/data.json");
 
-xhttp.send();
+
+xhttp.send();console.log(xhttp);
  /* declenche la demande de la ressource*/
-  async function Projets() {
+ function Projets() {
   
   if (this.readyState == 4 && this.status == 200) {
     const tprojet = document.getElementById("tprojet");
-     const data = await JSON.parse(this.response);
+     const data = JSON.parse(this.response);
     console.log(data);
     const body = document.querySelector("body");
 
