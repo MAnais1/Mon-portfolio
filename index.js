@@ -1,10 +1,10 @@
 const xhttp = new XMLHttpRequest();
-xhttp.addEventListener("load",Projets)
+xhttp.onreadystatechange = Projets;
 xhttp.open("GET", "/data.json");
 
 xhttp.send();
  /* declenche la demande de la ressource*/
-   async function Projets() {
+  async function Projets() {
   
   if (this.readyState == 4 && this.status == 200) {
     const tprojet = document.getElementById("tprojet");
