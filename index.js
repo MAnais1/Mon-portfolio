@@ -1,19 +1,19 @@
 async function GetData() {
-  const response = await fetch("https://portfolio-anais-marmuse-64cccb154aa9.herokuapp.com/");
+  const response = await fetch("/data.json");
   return await response.json();
 }
 
 /* declenche la demande de la ressource*/
 async function Projets() {
-  const data = await GetData();
-  console.log(data);
+  const response = await GetData();
+  console.log(response);
 
   const tprojet = document.getElementById("tprojet");
 
-  console.log(data);
+  console.log(response);
   const body = document.querySelector("body");
 
-  data.forEach((element) => {
+  response.projets.forEach((element) => {
     /*creation et affichage projets*/
     const divCard = document.createElement("div");
     divCard.classList.add("projet-card");
