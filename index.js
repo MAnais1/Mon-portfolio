@@ -3,7 +3,7 @@ xhttp.onreadystatechange = Action;
 xhttp.open("GET", "/data.json");
 
 xhttp.send(); /* declenche la demande de la ressource*/
-function Action() {
+ function Action() {
   if (this.readyState == 4 && this.status == 200) {
     const tprojet = document.getElementById("tprojet");
     const data = JSON.parse(this.response);
@@ -147,3 +147,4 @@ function Action() {
     });
   }
 }
+Action();
