@@ -1,9 +1,9 @@
 const xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = Projets;
-xhttp.open("GET", "/data.json");
+xhttp.open("GET", "data.json");
 
 
-xhttp.send();console.log(xhttp);
+xhttp.send();
  /* declenche la demande de la ressource*/
  function Projets() {
   
